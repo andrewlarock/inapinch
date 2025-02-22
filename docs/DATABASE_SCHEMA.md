@@ -88,7 +88,7 @@ Examples:
 Definition: A job scheduling window containing two dates separated by '|'.
 
 Format:
-  <Opening Window>|<Closing Window>
+  "<Opening_Window>|<Closing_Window>"
 
 Example:
   '2/19/25 8 PM|2/21/25 10 PM'
@@ -125,7 +125,7 @@ Possible Entries:
 Definition: A customer rating (1-5) followed by optional text feedback, separated by '|'. This is left by the customer for the provider that carried out their service.
 
 Format:
-  <Rating>|<Feedback>
+  "<Rating>|<Feedback>"
 
 Example:
   '5|Incredible job! The lawn looks amazing!'
@@ -196,7 +196,7 @@ Certain values inside providerDetails store structured data as formatted strings
 `feedback`
 Definition: List of reviews left by individual customers. Each review contains a rating (1-5), an optional text review, the services the completed, and the date they completed it on, each separated by a '|'. This is so we can store each review and pertitient details about said review on the provider's profile page
 
-Format: <Rating>|<Review_Text>|<Services_Completed>|<Date>
+Format: "<Rating>|<Review_Text>|<Services_Completed>|<Date>"
 
 Examples:
 - "5|Joe did a great job!|Front & Back Lawn Trimming|12/18"
