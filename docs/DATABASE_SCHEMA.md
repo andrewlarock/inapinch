@@ -42,6 +42,7 @@ The `Jobs` table stores information about each posted landscaping job.
 Certain columns in this MySQL table store structured data as formatted strings or JSON arrays. Below are explanations of these formats and how their values should be interpreted.
 
 `job_status`
+
 Definition: Array of job status updates. The most recent job update is always the first element in the array.
 
 Example:
@@ -57,6 +58,7 @@ Possible Statuses:
   - "Completed: <timestamp>" -> Work is finished.
 
 `job_details`
+
 Definition: A list specifying job details of either a Lawn Care or Snow Removal job.
 
 Examples:
@@ -75,13 +77,14 @@ Possible Entries for a Snow Removal Job:
 - "Back Porch"
 
 `schedule_type`
+
 Definition: Specifies if the user wants their service ASAP or within a scheduled window.
 
 Examples:
 'ASAP' or 'Scheduled'
 
 `scheduled_time`
--------------------------------------
+
 Definition: A job scheduling window containing two dates separated by '|'.
 
 Format:
@@ -97,7 +100,6 @@ Breakdown:
 NOTE: If scheduled_type is 'ASAP', this field will be NULL.
 
 `delivery_address` and `delivery_coords`
--------------------------------------
 - delivery_address: '123 Main St, New York, NY, USA'
   * Human-readable address for job location.
 
@@ -105,7 +107,7 @@ NOTE: If scheduled_type is 'ASAP', this field will be NULL.
   * Latitude and longitude for job location (useful for map integration).
 
 `before_photos` and `after_photos`
--------------------------------------
+
 Definition: URLs pointing to before & after job images stored in AWS S3.
 
 Example:
@@ -119,7 +121,7 @@ Possible Entries:
   - after_photos  -> Photos after job completion submitted by the provider.
 
 `feedback`
--------------------------------------
+
 Definition: A customer rating (1-5) followed by optional text feedback, separated by '|'. This is left by the customer for the provider that carried out their service.
 
 Format:
