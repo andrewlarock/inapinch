@@ -155,8 +155,8 @@ A customer is a regular user who can request landscaping services. Their Firesto
 
 | Field        | Type   | Example Value                     | Description                                |
 |--------------|--------|-----------------------------------|--------------------------------------------|
-| displayName  | string | 'James Doe'                       | Full name of the customer.                 |
-| email        | string | 'jamesdoe@gmail.com'              | Email address of the customer.             |
+| displayName  | string | 'John Doe'                       | Full name of the customer.                 |
+| email        | string | 'johndoe@gmail.com'              | Email address of the customer.             |
 | homeAddress  | string | '123 Main St, New York, NY, USA'  | Home address where services are requested. |
 | homeCoords   | map    | {"lat": 40.7128, "lon": -74.0060} | Geographic coordinates of the home.        |
 
@@ -166,8 +166,8 @@ A provider is a user who offers landscaping services. Their Firestore document c
 
 | Field        | Type   | Example Value                     | Description                                |
 |--------------|--------|-----------------------------------|--------------------------------------------|
-| displayName  | string | 'James Doe'                       | Full name of the customer.                 |
-| email        | string | 'jamesdoe@gmail.com'              | Email address of the customer.             |
+| displayName  | string | 'John Doe'                       | Full name of the customer.                 |
+| email        | string | 'johndoe@gmail.com'              | Email address of the customer.             |
 | homeAddress  | string | '123 Main St, New York, NY, USA'  | Home address where services are requested. |
 | homeCoords   | map    | {"lat": 40.7128, "lon": -74.0060} | Geographic coordinates of the home.        |
 | isProvider   | string | 'Yes'                             | Confirms that the user is a provider.      |
