@@ -1,6 +1,6 @@
 # API Documentation
 
-You can explore the API endpoints and their details in our public Swagger documentation:
+You can explore the API endpoints and their details in my public Swagger documentation:
 
 https://inapinchapi.com/swagger/index.html
 
