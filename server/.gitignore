@@ -1,0 +1,37 @@
+# Ignore .NET build files
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.log
+*.cache
+*.vs/
+.vscode/
+
+# Ignore user-specific Visual Studio files
+*.user
+*.suo
+*.csproj.user
+
+# Ignore application settings
+appsettings.json
+appsettings.Development.json
+launchSettings.json
+
+# Ignore environment secrets
+.env
+.env.local
+
+# Ignore package-related files
+node_modules/
+packages/
+
+# Ignore compiled files
+*.pyc
+*.class
+*.jar
+
+# Ignore system files
+.DS_Store
+Thumbs.db
