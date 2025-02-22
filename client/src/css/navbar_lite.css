@@ -1,0 +1,21 @@
+.navbar-lite {
+    display: flex;
+    width: 100%;
+    background-color: #407C50;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.navbar-lite-header {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 1.2rem;
+    color: #f7f7f7;
+    margin-left: -.1rem;
+}
+
+.navbar-lite-logo {
+    width: 40px;
+    height: auto;
+    margin-left: 1.25rem;
+}

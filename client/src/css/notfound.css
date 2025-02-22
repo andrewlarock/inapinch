@@ -1,0 +1,57 @@
+body {
+    background-color: #f7f7f7;
+}
+
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.not-found-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .75rem;
+}
+
+.not-found-logo {
+    width: auto;
+    height: 60px;
+}
+
+.not-found-header {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #333333;
+}
+
+.not-found-subheader {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 6rem;
+    color: #333333;
+    max-width: 80%;
+    margin-bottom: -1rem;
+}
+
+.not-found-text {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1.5rem;
+    color: #333333;
+    max-width: 80%;
+    margin-bottom: 2rem;
+}
+
+.not-found-warning {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    max-width: 80%;
+    margin-bottom: 1.5rem;
+}

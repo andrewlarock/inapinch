@@ -1,0 +1,114 @@
+.account-header-container {
+    height: 14.25rem;
+    background-color: #407C50;
+    align-items: center;
+    margin-top: -1px;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.account-header {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 1.75rem;
+    color: #f7f7f7;
+    padding-top: 3rem;
+    margin-bottom: .25rem;
+}
+
+.account-subheader {
+    font-family: 'Gabarito', serif;
+    font-size: 1rem;
+    color: #f7f7f7;
+}
+
+.account-body-container {
+    width: 72.5%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 1.25rem;
+    margin-left: calc(13.75% - 1.625rem);
+    background-color: white;
+    margin-top: -5rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(115, 115, 115, 0.25);
+    margin-bottom: 1.25rem;
+}
+
+.account-body-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    opacity: 0.4;
+}
+
+.account-option-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.account-option-container-no-margin {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+
+.circle-container {
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: #E5E5E5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: .75rem;
+}
+
+.circle-container img {
+    width: 1.05rem;
+    height: 1.05rem;
+    object-fit: cover;
+}
+
+.account-option-text-container {
+    text-align: left;
+    max-width: 70%;
+}
+
+.account-option-header {
+    font-family: 'Gabarito', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1c1c1c;
+    margin-bottom: .15rem;
+}
+
+.account-option-subheader {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .75rem;
+    color: #333333;
+}
+
+.arrow-right {
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.4;
+    margin-left: auto;
+}
+
+.account-mini-body-container {
+    width: 72.5%;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 1.25rem;
+    margin-left: calc(13.75% - 1.625rem);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(115, 115, 115, 0.25);
+    margin-bottom: 7rem;
+}

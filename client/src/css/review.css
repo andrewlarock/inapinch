@@ -1,0 +1,23 @@
+.review-container {
+    margin-left: .5rem;
+}
+
+.review-star-image {
+    width: 17px;
+    height: 17px;
+    margin-left: 2px;
+    margin-bottom: .2rem;
+}
+
+.review {
+    font-family: 'Gabarito', serif;
+    font-size: .9rem;
+    color: #1C1C1C;
+}
+
+.review-details {
+    font-family: 'Gabarito', serif;
+    font-size: .8rem;
+    color: #333333;
+    margin-top: .25rem;
+}

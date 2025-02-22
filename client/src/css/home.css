@@ -1,0 +1,520 @@
+body {
+    background-color: #407C50;
+}
+
+.home-container-lawn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-top: -1px;
+}
+
+.home-container-snow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-top: -1px;
+}
+
+.home-container-lawn,
+.home-container-snow {
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-container-lawn {
+  background-color: #407C50;
+}
+
+.home-container-snow {
+  background-color: #4E9094;
+}
+
+.home-container-lawn, .home-container-snow {
+  transform: translateX(0);
+}
+
+.home-container-lawn.animating,
+.home-container-snow.animating {
+  transform: translateX(-100%);
+}
+
+.home-container-lawn.animating-enter,
+.home-container-snow.animating-enter {
+  transform: translateX(100%);
+}
+
+.home-logo {
+    width: auto;
+    height: 80px;
+    margin-bottom: -5px;
+    margin-left: 10px;
+    margin-top: 3rem;
+}
+
+.home-header {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.home-subheader {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    max-width: 80%;
+    /* line-height: 1.25; */
+    margin-bottom: 1.5rem;
+}
+
+.home-search-bar::placeholder {
+    font-size: .85rem;
+    color: #8b8b8b;
+}
+
+.option-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.selectable-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem .5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.selectable-button .button-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.45rem;
+}
+
+.selectable-button.selected::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 90%;
+    margin-left: 5%;
+    height: 2.5px;
+    background-color: white;
+}
+
+.map-container {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 5px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.home-info-container {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding-bottom: .75rem;
+}
+
+.home-info-wrapper {
+    padding-top: 3rem;
+    width: 82.5%;
+    margin-left: 8.75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-info-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.home-info-text-container-right-aligned {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.home-info-header-left-aligned {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: 500;
+    font-size: 1.45rem;
+    color: #1c1c1c;
+    margin-right: 2rem;
+}
+
+.home-info-subheader-left-aligned {
+    font-family: 'Gabarito', serif;
+    font-weight: 500;
+    font-size: .9rem;
+    color: #333333;
+    margin-top: .75rem;
+    margin-bottom: 4rem;
+}
+
+.home-info-image-left-aligned {
+    width: 80px;
+    height: auto;
+    margin-right: .25rem;
+}
+
+.home-info-header-right-aligned {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: 500;
+    font-size: 1.45rem;
+    color: #1c1c1c;
+    text-align: right;
+    margin-left: 2rem;
+}
+
+/* Make sure home info headers arent too big on Pro iPhones */
+@media (max-width: 400px) {
+    .home-info-header-right-aligned {
+        margin-left: 1.2rem;
+    }
+    .home-info-header-left-aligned {
+        margin-right: 1.2rem;
+    }
+}
+
+/* Make sure home info headers arent too big on iPhone SE */
+@media (max-width: 376px) {
+    .home-info-header-right-aligned {
+        font-size: 1.3rem;
+        margin-left: 1.2rem;
+    }
+    .home-info-header-left-aligned {
+        font-size: 1.3rem;
+        margin-right: 1.2rem;
+    }
+}
+
+.home-info-subheader-right-aligned {
+    font-family: 'Gabarito', serif;
+    font-weight: 500;
+    font-size: .875rem;
+    color: #333333;
+    margin-top: .75rem;
+    margin-bottom: 4rem;
+    text-align: right;
+    letter-spacing: -.1px;
+}
+
+.home-info-image-right-aligned {
+    width: 80px;
+    height: auto;
+}
+
+.side-info-container {
+    margin-left: 3.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 75%;
+}
+
+.side-info-container:nth-child(5) {
+    margin-bottom: 4rem;
+}
+
+.side-info-text {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #1c1c1c;
+    margin-right: 1.75rem;
+}
+
+.side-info-image {
+    width: 30px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.divider {
+    height: 1.5px;
+    width: 100%;
+    background-color: #323232;
+    margin-bottom: 4rem;
+}
+
+.provider-header-text {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #1c1c1c;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.provider-subheader-text {
+    font-family: 'Gabarito', serif;
+    font-weight: 500;
+    font-size: 1.65rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 2.25rem;
+}
+
+.provider-info-container {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    padding-right: 1.35rem;
+}
+
+.provider-info-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.provider-info-header {
+    font-family: 'Gabarito', serif;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: #171717;
+}
+
+.provider-info-subheader {
+    font-family: 'Gabarito', serif;
+    font-weight: 400;
+    font-size: .9rem;
+    color: #000000;
+    margin-left: 2.06rem;
+    margin-top: .2rem;
+}
+
+.provider-info-image {
+    width: 25px;
+    height: auto;
+    margin-right: .5rem;
+}
+
+.get-started-button {
+    background-color: #407C50;
+    color: #f7f7f7;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Gabarito', serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .3px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-bottom: 4rem;
+    margin-top: 1.25rem;
+}
+
+.get-started-button:hover {
+    background-color: #407C50;
+}
+
+.bottom-info-image {
+    width: 65px;
+    height: auto;
+    margin-bottom: .75rem;
+}
+
+.bottom-info-header-text {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #1c1c1c;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.bottom-info-subheader-text {
+    font-family: 'Gabarito', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 2.25rem;
+}
+
+.bottom-divider {
+    margin-bottom: 2.25rem;
+}
+
+.home-autocomplete-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(100% - .05rem);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gabarito', serif;
+    font-size: .95rem;
+    font-weight: 500;
+    color: #333333;
+    text-align: left;
+}
+
+.home-autocomplete-dropdown li {
+    padding: 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.home-autocomplete-dropdown li:hover {
+    background-color: #f8f9fa;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+.home-search-bar {
+    width: 16rem;
+    height: 3.1rem; 
+    padding: 0.25rem 1rem; 
+    padding-left: 58px; 
+    border: none;
+    border-radius: 7.5px; 
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 450;
+    color: #3b3b3b;
+    font-size: .95rem; 
+    background-color: white; 
+    background-image: url('./images/pin.png'); 
+    background-repeat: no-repeat;
+    background-position: 22px center; 
+    background-size: 23px 23px;
+}
+
+.home-selection-container {
+    display: flex;
+    align-items: center;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
+
+.go-button {
+    width: 3.25rem;
+    background-color: #8fbc74;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    cursor: pointer;
+    margin-left: .65rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.go-button-text {
+    font-family: 'gabarito', serif;
+    font-size: 1.2rem;
+    color: #f7f7f7;
+    font-weight: 600;
+    margin-bottom: 7px;
+    margin-left: 1rem;
+}
+
+.video-thumbnail-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 3.5rem;
+}
+
+.video-thumbnail {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.play-button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 52px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.play-button-overlay::before {
+    content: "▶";
+    position: relative;
+    top: -3px;
+    left: 2px;
+}
+
+.thumbnail-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.thumbnail-header-text {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #1c1c1c;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.thumbnail-subheader-text {
+    font-family: 'Gabarito', serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333333;
+    text-align: center;
+    margin-top: -.4rem;
+    margin-bottom: .5rem;
+}
+
+.click-icon {
+    width: 24px;
+    height: auto;
+    position: relative;
+    bottom: 4px;
+}

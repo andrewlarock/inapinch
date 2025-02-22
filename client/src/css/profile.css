@@ -1,0 +1,152 @@
+.profile-header-container {
+    height: 29rem;
+    background-color: #407C50;
+    align-items: center;
+    margin-top: -1px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.profile-header {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 1.75rem;
+    color: #f7f7f7;
+    padding-top: 3rem;
+    margin-bottom: .25rem;
+}
+
+.profile-subheader {
+    font-family: 'Gabarito', serif;
+    font-size: 1.2rem;
+    color: #f7f7f7;
+    margin-bottom: 2rem;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+}
+
+.profile-details-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.profile-rating-container {
+    text-align: center;
+    width: 50%;
+    max-width: 11rem;
+}
+
+.profile-services-container {
+    text-align: center;
+    width: 50%;
+    max-width: 11rem;
+}
+
+.profile-details-header {
+    font-family: 'Gabarito', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-details-subheader {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 1rem;
+    color: #f7f7f7;
+}
+
+.profile-star-image {
+    width: 19px;
+    height: 19px;
+    margin-right: .35rem;
+    margin-bottom: 3px;
+}
+
+.profile-location-text {
+    font-family: 'Gabarito', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile-location-image {
+    width: 19px;
+    height: 19px;
+    margin-right: .35rem;
+}
+
+.profile-bold-text {
+    font-weight: 600;
+}
+
+.profile-body-container {
+    width: 85%;
+    margin-left: 7.5%;
+    padding-top: 1.75rem;
+    padding-bottom: 2rem;
+    margin-top: .5rem;
+}
+
+.profile-body-header {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 1.5rem;
+    color: #1c1c1c;
+    margin-bottom: .25rem;
+}
+
+.profile-review-subheader {
+    font-family: 'Gabarito', serif;
+    font-size: .9rem;
+    color: #555555;
+    margin-bottom: 1rem;
+}
+
+.profile-body-subheader {
+    font-family: 'Gabarito', serif;
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: .25rem;
+}
+
+.profile-body-details {
+    font-family: 'Gabarito', serif;
+    font-size: 1rem;
+    color: #1c1c1c;
+    font-weight: 500;
+}
+
+.profile-divider {
+    height: 2px;
+    width: 100%;
+    background-color: #323232;
+    margin-bottom: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.profile-edit-image {
+    width: 20px;
+    height: 20px;
+    margin-left: .25rem;
+}

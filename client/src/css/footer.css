@@ -1,0 +1,75 @@
+.footer, .footer-blue {
+    width: 100%;
+    padding-top: 4.5rem;
+    padding-bottom: 2rem;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.footer {
+    background-color: #407C50;
+}
+
+.footer-blue {
+    background-color: #4E9094;
+}
+
+.footer-container {
+    width: 82.5%;
+    margin-left: 8.75%;
+}
+
+.social-icon {
+    width: 25px;
+    height: auto;
+}
+
+.social-icon:nth-child(2),
+.social-icon:nth-child(3) {
+    margin-left: 1.5rem;
+}
+
+.footer-header-text {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+.footer-subheader-text {
+    font-family: 'Gabarito', serif;
+    font-weight: 400;
+    font-size: .9rem;
+    max-width: 85%;
+    color: #ffffff;
+    margin-top: .25rem;
+    line-height: 1.1;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+    padding-bottom: 2rem;
+}
+
+.contact-text {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: .85rem;
+    color: #ffffff;
+}
+
+.contact-icon {
+    width: 17px;
+    height: auto;
+    margin-right: .5rem;
+}
+
+.tab-text {
+    font-family: 'Gabarito', serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-top: .25rem;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}

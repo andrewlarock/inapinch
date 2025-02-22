@@ -1,0 +1,160 @@
+body {
+    background-color: #f7f7f7;
+}
+
+.signup-body {
+    width: 85%;
+    margin-left: 7.5%;
+    padding-top: 1.75rem;
+}
+
+.signup-header {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 1.65rem;
+    color: #1c1c1c;
+    margin-bottom: .6rem;
+}
+
+.signup-subheader {
+    font-family: 'Gabarito', serif;
+    font-size: 1rem;
+    line-height: 1.15;
+    color: #444444;
+    margin-bottom: 1.25rem;
+}
+
+.signup-google-container {
+    width: 100%;
+    max-width: 30rem;
+    border: 1.5px solid #333333;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.05rem;
+    padding-bottom: 1.05rem;
+    cursor: pointer;
+}
+
+.signup-google-text {
+    font-family: 'gabarito', serif;
+    font-size: 1.2rem;
+    color: #333333;
+    margin-top: -1px;
+}
+
+.signup-google-logo {
+    width: 20px;
+    height: auto;
+    margin-right: .65rem;
+}
+
+.signup-divider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 30rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.05rem;
+}
+
+.signup-divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #323232;
+}
+
+.signup-divider-text {
+    font-family: 'Gabarito', serif;
+    font-size: 1rem;
+    color: #444444;
+    margin: 0 0.75rem;
+}
+
+.signup-input-header {
+    font-family: 'gabarito', serif;
+    font-size: 1rem;
+    color: #1c1c1c;
+    font-weight: 500;
+    margin-bottom: .55rem;
+}
+
+.signup-input {
+    width: calc(100%);
+    max-width: calc(30rem);
+    border: 1.5px solid #333333;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 450;
+    color: #222222;
+    font-size: 1rem;
+    padding-top: 1.05rem;
+    padding-bottom: 1.05rem;
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.signup-input::placeholder {
+    font-size: 1rem;
+    color: #6f6f6f;
+}
+
+.continue-button {
+    width: 100%;
+    max-width: 30rem;
+    background-color: #333333;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+.continue-button-text {
+    font-family: 'gabarito', serif;
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.email-error-message {
+    font-family: 'Gabarito', serif;
+    font-size: 1rem;
+    color: #E54937;
+    margin-bottom: 1rem;
+    margin-top: -.1rem;
+}
+
+.google-error-message {
+    font-family: 'Gabarito', serif;
+    font-size: 1rem;
+    color: #E54937;
+    margin-top: 1.25rem;
+    margin-bottom: -.75rem;
+}
+
+.signup-terms-text {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: .75rem;
+    color: #333333;
+    margin-top: 1.2rem;
+}
+
+.signup-terms-link {
+    text-decoration: underline;
+    cursor: pointer;
+    color: inherit;
+}
+
+.success-message {
+    font-family: 'Gabarito', serif;
+    font-size: 1rem;
+    color: #4BB543;
+    margin-bottom: 1rem;
+    margin-top: -.1rem;
+}

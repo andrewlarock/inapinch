@@ -1,0 +1,102 @@
+body {
+    background-color: #f7f7f7;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin-left: 7.5%;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.dashboard-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .75rem;
+}
+
+.dashboard-logo {
+    width: auto;
+    height: 50px;
+}
+
+.dashboard-header {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 1.75rem;
+    color: #1c1c1c;
+}
+
+
+.dashboard-subheader {
+    font-family: 'Gabarito', serif;
+    font-size: 1rem;
+    color: #444444;
+}
+
+.dashboard-text {
+    font-family: 'Gabarito', serif;
+    font-size: 1.05rem;
+    color: #333333;
+    margin-bottom: .5rem;
+}
+
+.dashboard-options-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.75rem;
+}
+
+.dashboard-option-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-option {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.dashboard-available-image {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    margin-bottom: 1px;
+}
+
+.dashboard-jobs-image {
+    width: 29px;
+    height: 29px;
+    object-fit: contain;
+}
+
+.dashboard-profile-image {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    margin-bottom: 1px;
+}
+
+.dashboard-option-text {
+    font-family: 'Gabarito', serif;
+    font-size: .9rem;
+    color: #1c1c1c;
+    text-align: center;
+    margin-top: .4rem;
+}

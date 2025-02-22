@@ -1,0 +1,42 @@
+body {
+    background-color: #f7f7f7;
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 9rem;
+}
+
+.loading-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .75rem;
+}
+
+.loading-logo {
+    width: auto;
+    height: 45px;
+}
+
+.loading-header {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #333333;
+}
+
+
+.loading-text {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1.3rem;
+    color: #333333;
+    max-width: 80%;
+    margin-bottom: 2rem;
+}

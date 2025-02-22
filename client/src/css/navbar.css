@@ -1,0 +1,195 @@
+.navbar, .navbar-blue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.navbar {
+    background-color: #407C50;
+}
+
+.navbar-blue {
+    background-color: #4E9094;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    margin-left: auto;
+}
+
+.provider-button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1.5px solid white;
+    color: white;
+    padding: 0.5rem .8rem;
+    font-family: 'Gabarito', sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.provider-button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1.5px solid white;
+    color: white;
+}
+
+.provider-button:focus,
+.provider-button:active {
+    outline: none;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar-logo-header {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 1.2rem;
+    color: #f7f7f7;
+    margin-left: -.1rem;
+}
+
+.navbar-logo {
+    width: 40px;
+    height: auto;
+    margin-left: 1.25rem;
+}
+
+.login-button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-family: 'Gabarito', sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.login-button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.signup-button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1.5px solid white;
+    color: white;
+    padding: 0.5rem .75rem;
+    font-family: 'Gabarito', sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.signup-button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1.5px solid white;
+    color: white;
+}
+
+.welcome-text {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 100px;
+    /* border: 1px solid black; */
+}
+
+.navbar-menu-logo {
+    width: 28px;
+    height: auto;
+    margin-left: 1rem;
+}
+
+.navbar-close-logo {
+    width: 22px;
+    margin-right: 6px;
+    height: auto;
+    margin-left: 1rem;
+}
+
+.open-menu-container {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    transition: all .6s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.open-menu {
+    width: 100%;
+    background-color: rgba(77, 134, 93, 0.93);
+    backdrop-filter: blur(6px);
+    padding-top: 1.75rem;
+    height: 0;
+    overflow: hidden; 
+    transition: height .6s ease, opacity .6s ease;
+    opacity: 0;
+}
+
+.open-menu-container.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.open-menu.open {
+    height: auto;
+    opacity: 1;
+}
+
+.menu-option {
+    color: #f7f7f7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 300;
+    text-align: right;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.menu-option.active {
+    font-weight: 600;
+}
+
+.menu-user {
+    color: #f7f7f7;
+    font-family: 'Gabarito', serif;
+    font-size: .9rem;
+    text-align: right;
+    margin-right: 2rem;
+    margin-top: -2rem;
+    margin-bottom: 1.2rem;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+.navbar-provider-text {
+    font-family: 'Gabarito', serif;
+    font-size: 1rem;
+    color: #f7f7f7;
+}

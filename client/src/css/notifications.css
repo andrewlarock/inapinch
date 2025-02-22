@@ -1,0 +1,84 @@
+.notification-container {
+    position: fixed;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 21.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.notification {
+    background-color: #323232;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    opacity: 0.85;
+    animation: fadeIn 0.3s ease-in-out, fadeOut 0.5s ease-in-out 4.7s forwards;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.notification p {
+    margin: 0;
+    font-family: 'Gabarito', serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #f7f7f7;
+    margin-bottom: 1px;
+    flex-grow: 1;
+}
+
+.notification-timer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+    animation: shrink 5s linear forwards;
+}
+
+.notification-close-btn {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transform: translateY(-50%);
+    transition: opacity 0.3s;
+}
+
+.notification-close-btn:hover {
+    opacity: 0.8;
+}
+
+.close-image {
+    width: 10px;
+    height: auto;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 0.9; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 0.9; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-10px); }
+}
+
+@keyframes shrink {
+    from { width: 95%; }
+    to { width: 0%; }
+}
