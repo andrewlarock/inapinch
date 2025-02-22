@@ -267,8 +267,6 @@ namespace inapinch.Controllers
         {
             string connectionString = _configuration.GetConnectionString("DefaultConnection");
 
-            _logger.LogInformation("Received Job Accept Request: JobId = {JobId}, ProviderId = {ProviderId}", request.job_id, request.provider_id);
-
             using (var connection = new MySqlConnection(connectionString))
             {
                 try
@@ -530,9 +528,6 @@ namespace inapinch.Controllers
         public IActionResult SubmitFeedback([FromBody] JobRequest request)
         {
             string connectionString = _configuration.GetConnectionString("DefaultConnection");
-
-            _logger.LogInformation("Received Feedback Submission: JobId = {JobId}, Feedback = {Feedback}",
-                request.job_id, request.feedback);
 
             using (var connection = new MySqlConnection(connectionString))
             {
