@@ -125,7 +125,7 @@ Possible Entries:
 Definition: A customer rating (1-5) followed by optional text feedback, separated by '|'. This is left by the customer for the provider that carried out their service.
 
 Format:
-  "<Rating>|<Feedback>"
+  "<Customer_Rating>|<Text_Feedback>"
 
 Example:
   '5|Incredible job! The lawn looks amazing!'
