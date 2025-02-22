@@ -41,7 +41,7 @@ The `Jobs` table stores information about each posted landscaping job.
 ## Structured Data Columns
 Certain columns in this MySQL table store structured data as formatted strings or JSON arrays. Below are explanations of these formats and how their values should be interpreted.
 
-- `job_status`
+`job_status`
 Definition: Array of job status updates. The most recent job update is always the first element in the array.
 
 Example:
@@ -56,7 +56,7 @@ Possible Statuses:
   - "Accepted: <timestamp>" -> A provider has accepted the job.
   - "Completed: <timestamp>" -> Work is finished.
 
-- `job_details`
+`job_details`
 Definition: A list specifying job details of either a Lawn Care or Snow Removal job.
 
 Examples:
@@ -74,13 +74,13 @@ Possible Entries for a Snow Removal Job:
 - "Front Porch"
 - "Back Porch"
 
-- `schedule_type`
+`schedule_type`
 Definition: Specifies if the user wants their service ASAP or within a scheduled window.
 
 Examples:
 'ASAP' or 'Scheduled'
 
-- `scheduled_time`
+`scheduled_time`
 -------------------------------------
 Definition: A job scheduling window containing two dates separated by '|'.
 
@@ -96,7 +96,7 @@ Breakdown:
 
 NOTE: If scheduled_type is 'ASAP', this field will be NULL.
 
-- `delivery_address` and `delivery_coords`
+`delivery_address` and `delivery_coords`
 -------------------------------------
 - delivery_address: '123 Main St, New York, NY, USA'
   * Human-readable address for job location.
@@ -104,7 +104,7 @@ NOTE: If scheduled_type is 'ASAP', this field will be NULL.
 - delivery_coords: {"lat": 40.7128, "lon": -74.0060}
   * Latitude and longitude for job location (useful for map integration).
 
-- `before_photos` and `after_photos`
+`before_photos` and `after_photos`
 -------------------------------------
 Definition: URLs pointing to before & after job images stored in AWS S3.
 
@@ -118,7 +118,7 @@ Possible Entries:
   - before_photos -> Photos before job completion submitted by the user.
   - after_photos  -> Photos after job completion submitted by the provider.
 
-- `feedback`
+`feedback`
 -------------------------------------
 Definition: A customer rating (1-5) followed by optional text feedback, separated by '|'. This is left by the customer for the provider that carried out their service.
 
@@ -147,7 +147,7 @@ This section covers:
 ## Collection Overview
 Firestore is used to store user profiles which differ between regular users (customers) and service providers. Below are detailed examples of how each type of user is structured.
 
-- `Example Customer Entry`
+`Example Customer Entry`
 
 A customer is a regular user who can request landscaping services. Their Firestore document contains basic personal details and home location information.
 
@@ -158,7 +158,7 @@ A customer is a regular user who can request landscaping services. Their Firesto
 | homeAddress  | string | '123 Main St, New York, NY, USA'  | Home address where services are requested. |
 | homeCoords   | map    | {"lat": 40.7128, "lon": -74.0060} | Geographic coordinates of the home.        |
 
-- `Example Provider Entry`
+`Example Provider Entry`
 
 A provider is a user who offers landscaping services. Their Firestore document contains more fields than a customer, including business details, service areas, and performance ratings.
 
@@ -191,7 +191,7 @@ Breakdown of providerDetails (Nested Fields)
 ## Structured Values inside providerDetails
 Certain values inside providerDetails store structured data as formatted strings or objects. Below are explanations of these formats and how their values should be interpreted.
 
-- `feedback`
+`feedback`
 Definition: List of reviews left by individual customers. Each review contains a rating (1-5), an optional text review, the services the completed, and the date they completed it on, each separated by a '|'. This is so we can store each review and pertitient details about said review on the provider's profile page
 
 Format: <Rating>|<Review_Text>|<Services_Completed>|<Date>
