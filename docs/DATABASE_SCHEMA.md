@@ -196,7 +196,7 @@ Certain values inside providerDetails store structured data as formatted strings
 `feedback`
 Definition: List of reviews left by individual customers. Each review contains a rating (1-5), an optional text review, the services the completed, and the date they completed it on, each separated by a '|'. This is so we can store each review and pertitient details about said review on the provider's profile page
 
-Format: "<Rating>|<Review_Text>|<Services_Completed>|<Date>"
+Format: "<Customer_Rating>|<Review_Text>|<Services_Completed>|<Formatted_Date>"
 
 Examples:
 - "5|Joe did a great job!|Front & Back Lawn Trimming|12/18"
