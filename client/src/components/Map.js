@@ -12,7 +12,7 @@ const Map = ({ center, zoom, serviceRange, isScrollable = true, className }) => 
         if (center && serviceRange) {
             const bounds = new window.google.maps.LatLngBounds();
             const radiusInMeters = serviceRange * 1609.34;
-            
+
             // Expands the bounds in all directions
             bounds.extend(new window.google.maps.LatLng(center.lat + radiusInMeters / 111320, center.lng));
             bounds.extend(new window.google.maps.LatLng(center.lat - radiusInMeters / 111320, center.lng));

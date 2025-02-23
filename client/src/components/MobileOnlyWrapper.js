@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 const MobileOnlyWrapper = ({ children }) => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 800);
+      setIsMobile(window.innerWidth <= 700);
     };
 
     window.addEventListener("resize", handleResize);

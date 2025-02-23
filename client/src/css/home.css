@@ -448,8 +448,8 @@ body {
 
 .video-thumbnail-container {
     position: relative;
-    width: 100%;
-    max-width: 600px;
+    width: 95%;
+    max-width: 25rem;
     margin: auto;
     cursor: pointer;
     margin-top: 10px;
@@ -467,8 +467,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 52px;
-    color: white;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 50%;
     width: 80px;
@@ -476,13 +474,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
 }
 
-.play-button-overlay::before {
-    content: "▶";
+.play-button-image {
+    width: 40px;
+    height: auto;
     position: relative;
-    top: -3px;
     left: 2px;
 }
 
@@ -513,7 +510,7 @@ body {
 }
 
 .click-icon {
-    width: 24px;
+    width: 23px;
     height: auto;
     position: relative;
     bottom: 4px;

@@ -16,7 +16,7 @@ import landscape from '../css/images/landscape.png';
 import lawnmower from '../css/images/lawnmower.png';
 import edging from '../css/images/edging.png';
 import snow_cloud from '../css/images/snow_cloud.png';
-import earn from '../css/images/earn.png';
+import play from '../css/images/play.png';
 import work from '../css/images/work.png';
 import impact from '../css/images/impact.png';
 import safety from '../css/images/safety.png';
@@ -174,7 +174,9 @@ function Home() {
                                 alt="Watch Video on YouTube" 
                                 className="video-thumbnail"
                             />
-                            <div className="play-button-overlay"></div>
+                            <div className="play-button-overlay">
+                                <img src={play} alt="Play Button" className="play-button-image" />
+                            </div>
                         </a>
                     </div>
 
@@ -208,15 +210,7 @@ function Home() {
                     <div className="divider"></div>
 
                     <div className="provider-header-text">Become a Provider with In a Pinch</div>
-                    <div className="provider-subheader-text">Set your own schedule, grow your own earnings</div>
-
-                    <div className="provider-info-container">
-                        <div className="provider-info-text-container">
-                            <img src={earn} className="provider-info-image" />
-                            <div className="provider-info-header">Earn What You Deserve</div>
-                        </div>
-                        <div className="provider-info-subheader">Keep 100% of your earnings and tips, with no hidden fees.</div>
-                    </div>
+                    <div className="provider-subheader-text">Set your own schedule, make a lasting impact</div>
 
                     <div className="provider-info-container">
                         <div className="provider-info-text-container">
@@ -229,9 +223,9 @@ function Home() {
                     <div className="provider-info-container">
                         <div className="provider-info-text-container">
                             <img src={impact} className="provider-info-image" />
-                            <div className="provider-info-header">Give Back While You Earn</div>
+                            <div className="provider-info-header">Help Your Community</div>
                         </div>
-                        <div className="provider-info-subheader">Help your neighbors and make a positive impact, all while getting paid.</div>
+                        <div className="provider-info-subheader">Lend a helping hand to your neighbors and make a positive impact.</div>
                     </div>
                     <button className="get-started-button" onClick={() => navigate("/apply")}>Get Started Today!</button>
 
