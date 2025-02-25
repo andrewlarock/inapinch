@@ -17,4 +17,4 @@ In a Pinch is a web application that connects users with local landscaping servi
 - Provider and Customer Profiles: Secure profiles for both users and providers via Firebase authentication, making job tracking and communication seamless.
 - Location Services: Integrated with Google Maps API, Places API, and Geocoding API to display job locations, directions, and distance calculations for efficient routing.
 - Review & Rating System: Customers can leave ratings and reviews for the providers who completed their services, ensuring transparency between customers and providers.
-- Advanced Security: Implemented security features like IP-based rate limiting and bot detection to protect against unauthorized usage.
+- Enhanced Security Features: Implemented security features like IP-based rate limiting and bot detection to protect against unauthorized usage.
